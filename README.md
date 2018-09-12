@@ -5,7 +5,7 @@ Dataset :- http://robotics.csie.ncku.edu.tw/Databases/FaceDetect_PoseEstimate.ht
 
 
 ## Tools Used:-
- Python 3.6 \n
+ Python 3.6 <br/>
  Opencv 3.2.0
  Numpy
  Pillow
