@@ -23,3 +23,5 @@ LVQ stands for Learning Vector Quantization. It is a prototype-based supervised 
 # Procedure
 
 ## Pre- Processing 
+In the obtained database the image resolution is 680x480. If we take this as input then the total number of inputs will be 326,400 and we will be running it through multiple epoch which will take a lot of time and a lot computing power. Therefore to save time we decrease the resolution and take image size 50x50 and crop only the faces so that it gives us better results.
+
