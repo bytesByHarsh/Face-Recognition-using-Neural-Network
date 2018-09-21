@@ -29,5 +29,20 @@ Each photo is converted to grey-scale. This gives us image in form of an array w
 
 If we take threshold 127 then with slight change in lighting the result can change drastically. So to avoid it we have use Adaptive Threshold Method(Gaussian).In Gaussian Adaptive Threshold, value is the weighted sum of neighbourhood values where weights are a Gaussian window.
 
+<p align="center">
 
-![](images/compare.PNG)
+  <img src="images/compare.PNG">
+</p>
+## Training 
+
+For training we have taken 1050 input images(650 positive and 400 negative images). For a single image we have 2500 input nodes which are then passed to 200 hidden nodes and finally there are 2500 output nodes.Target value for the BPN is given as the image itself. In this process BPN is used as auto-associative network. Here BPN is used to extract features of face from the image.
+
+
+
+
+<p align="center">
+  <img src="images/bpn.jpeg">
+  Network with just BPN
+</p>
+
+After the network is trained then the hidden nodes are taken as input and pass on to another network in which it is separated by using LVQ. The output has two nodes which tells whether the face is present or not. This is passed to another layer which is then passed to a activation function. This is the final output which tells us the probability of face present in that image.
