@@ -67,3 +67,12 @@ value of 1.16 and for negative it was around 0.43.
 </p>
 
 For opening the pre-saved weights we use pickle library.
+
+# Results
+Initially the accuracy was 61% when the output of hidden layer was considered as
+output.
+When another neural layer was attached then the accuracy increased to 65%. When the training data set was increased from 350 to 500 the accuracy increased to 72% and it takes around 0.096 sec to identify each image whether it is having a face or not.
+
+This kind of network works better for identifying the identity of the person instead of detecting whether it is a face or not. Since this networks on extracting features and based on them give the output therefore it can be trained to give the identity of a person in form of binary or hexadecimal value.
+
+Moreover if we want to further improve the accuracy for face detection then we will have to increase the number of hidden layer but because of that the computation time will be higher and will not have real world application as it will take time to show the result.
