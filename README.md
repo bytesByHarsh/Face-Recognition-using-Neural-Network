@@ -47,3 +47,11 @@ After the network is trained then the hidden nodes are taken as input and pass o
 <p align="center">
  <img src="images/train.PNG">
 </p>
+
+This whole process takes about 2hr to train the model(For 10 epoch per image). If we increase the number of epochs then the result will improve but the time taken will increase drastically(This might not be true for al the cases as at some point the error becomes constant and do not decreases).
+
+All the trained data-set i.e weights are stored using pickle and gzib library.
+
+<p align="center">
+ <img src="images/network.PNG">
+</p>
