@@ -44,3 +44,6 @@ Network with just BPN
  </p>
 After the network is trained then the hidden nodes are taken as input and pass on to another network in which it is separated by using LVQ. The output has two nodes which tells whether the face is present or not. This is passed to another layer which is then passed to a activation function. This is the final output which tells us the probability of face present in that image.
 
+<p align="center">
+ <img src="images/train.PNG">
+</p>
