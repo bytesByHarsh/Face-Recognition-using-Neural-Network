@@ -55,3 +55,15 @@ All the trained data-set i.e weights are stored using pickle and gzib library.
 <p align="center">
  <img src="images/network.PNG">
 </p>
+
+## Testing 
+For testing purpose from the database we had already separated 550 images for testing which were not used as training database. We tested on around 550 positive images and 400 negative images. These images are also scaled to 50x50 in order to test.
+
+As for the output mean result for positive training database the output had a
+value of 1.16 and for negative it was around 0.43.
+
+<p align="center">
+ <img src="images/testnetwork.PNG">
+</p>
+
+For opening the pre-saved weights we use pickle library.
