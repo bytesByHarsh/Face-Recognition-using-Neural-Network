@@ -10,6 +10,7 @@ BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 face_cascade= cv2.CascadeClassifier('cascades/data/haarcascade_frontalface_alt2.xml')
 def main():
     count=0
+    DEL_PERMISSION = input("Do You Want to Delete the original file?(Y/N)")
     for root,dirs,files in os.walk(BASE_DIR):
         print('Root:',root)
         #print(files)
@@ -31,6 +32,8 @@ def main():
                 cv2.imwrite(path,pic)
                 #cv2.imshow('image',pic)
                 count+=1
+                if DEL_PERMISSION =='Y':
+                    os.remove(file)
 
 
 
